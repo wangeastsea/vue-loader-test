@@ -1,5 +1,6 @@
 const { getOptions } = require('loader-utils')
-// import { parse } from '@babel/parser'
+const parser = require('@babel/parser')
+var babel = require('@babel/core')
 // import generate from '@babel/generator'
 // import traverse, { NodePath } from '@babel/traverse'
 module.exports = function(source) {
@@ -7,18 +8,14 @@ module.exports = function(source) {
     // console.log(getOptions(this))
     // console.log(this)
     // console.log(this.query.params)
-    debugger
-    // const ast = require('@babel/parser').parse(source, {
-    //     sourceType: 'module',
-    //     allowUndeclaredExports: true,
-    //     allowImportExportEverywhere: true
-    // })
-    // console.log(ast)
-    // const handleContent = source
-    //     .replace('框架', 'vue框架')
-    //     .replace('JS', 'JavaScript')
-    // return source
-    console.log('source', source)
+    let ast = ''
+    let result = babel.transform(source, {
+        ast: true,
+        filename: '',
+        code: true,
+        presets: [],
+        plugins: []
+    })
+    console.log('result ===>', result)
     this.callback(null, source)
-    // return source
 }
