@@ -1,6 +1,6 @@
 {
   mode: 'development',
-  context: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test',
+  context: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test',
   node: {
     setImmediate: false,
     process: 'mock',
@@ -11,14 +11,14 @@
     child_process: 'empty'
   },
   output: {
-    path: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/dist',
+    path: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\dist',
     filename: 'js/[name].js',
     publicPath: '/',
     chunkFilename: 'js/[name].js'
   },
   resolve: {
     alias: {
-      '@': '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/src',
+      '@': 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\src',
       vue$: 'vue/dist/vue.runtime.esm.js'
     },
     extensions: [
@@ -31,8 +31,8 @@
     ],
     modules: [
       'node_modules',
-      '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules',
-      '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/@vue/cli-service/node_modules'
+      'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules',
+      'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\@vue\\cli-service\\node_modules'
     ],
     plugins: [
       /* config.resolve.plugin('pnp') */
@@ -41,10 +41,10 @@
   },
   resolveLoader: {
     modules: [
-      '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/@vue/cli-plugin-babel/node_modules',
+      'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\@vue\\cli-plugin-babel\\node_modules',
       'node_modules',
-      '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules',
-      '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/@vue/cli-service/node_modules'
+      'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules',
+      'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\@vue\\cli-service\\node_modules'
     ],
     plugins: [
       /* config.resolve.plugin('pnp-loaders') */
@@ -60,20 +60,20 @@
         use: [
           /* config.module.rule('vue').use('cache-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/cache-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\cache-loader\\dist\\cjs.js',
             options: {
-              cacheDirectory: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/.cache/vue-loader',
+              cacheDirectory: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\.cache\\vue-loader',
               cacheIdentifier: 'bcd8001e'
             }
           },
           /* config.module.rule('vue').use('vue-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-loader/lib/index.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-loader\\lib\\index.js',
             options: {
               compilerOptions: {
                 whitespace: 'condense'
               },
-              cacheDirectory: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/.cache/vue-loader',
+              cacheDirectory: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\.cache\\vue-loader',
               cacheIdentifier: 'bcd8001e'
             }
           },
@@ -89,11 +89,11 @@
         use: [
           /* config.module.rule('images').use('url-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/url-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\url-loader\\dist\\cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/file-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\file-loader\\dist\\cjs.js',
                 options: {
                   name: 'img/[name].[hash:8].[ext]'
                 }
@@ -108,7 +108,7 @@
         use: [
           /* config.module.rule('svg').use('file-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/file-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\file-loader\\dist\\cjs.js',
             options: {
               name: 'img/[name].[hash:8].[ext]'
             }
@@ -121,11 +121,11 @@
         use: [
           /* config.module.rule('media').use('url-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/url-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\url-loader\\dist\\cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/file-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\file-loader\\dist\\cjs.js',
                 options: {
                   name: 'media/[name].[hash:8].[ext]'
                 }
@@ -140,11 +140,11 @@
         use: [
           /* config.module.rule('fonts').use('url-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/url-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\url-loader\\dist\\cjs.js',
             options: {
               limit: 4096,
               fallback: {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/file-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\file-loader\\dist\\cjs.js',
                 options: {
                   name: 'fonts/[name].[hash:8].[ext]'
                 }
@@ -192,7 +192,7 @@
             use: [
               /* config.module.rule('css').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -200,7 +200,7 @@
               },
               /* config.module.rule('css').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -211,7 +211,7 @@
               },
               /* config.module.rule('css').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -227,7 +227,7 @@
             use: [
               /* config.module.rule('css').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -235,7 +235,7 @@
               },
               /* config.module.rule('css').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -243,7 +243,7 @@
               },
               /* config.module.rule('css').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -259,7 +259,7 @@
             use: [
               /* config.module.rule('css').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -267,7 +267,7 @@
               },
               /* config.module.rule('css').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -278,7 +278,7 @@
               },
               /* config.module.rule('css').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -293,7 +293,7 @@
             use: [
               /* config.module.rule('css').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -301,7 +301,7 @@
               },
               /* config.module.rule('css').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -309,7 +309,7 @@
               },
               /* config.module.rule('css').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -331,7 +331,7 @@
             use: [
               /* config.module.rule('postcss').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -339,7 +339,7 @@
               },
               /* config.module.rule('postcss').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -350,7 +350,7 @@
               },
               /* config.module.rule('postcss').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -366,7 +366,7 @@
             use: [
               /* config.module.rule('postcss').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -374,7 +374,7 @@
               },
               /* config.module.rule('postcss').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -382,7 +382,7 @@
               },
               /* config.module.rule('postcss').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -398,7 +398,7 @@
             use: [
               /* config.module.rule('postcss').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -406,7 +406,7 @@
               },
               /* config.module.rule('postcss').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -417,7 +417,7 @@
               },
               /* config.module.rule('postcss').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -432,7 +432,7 @@
             use: [
               /* config.module.rule('postcss').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -440,7 +440,7 @@
               },
               /* config.module.rule('postcss').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -448,7 +448,7 @@
               },
               /* config.module.rule('postcss').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -470,7 +470,7 @@
             use: [
               /* config.module.rule('scss').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -478,7 +478,7 @@
               },
               /* config.module.rule('scss').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -489,7 +489,7 @@
               },
               /* config.module.rule('scss').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -512,7 +512,7 @@
             use: [
               /* config.module.rule('scss').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -520,7 +520,7 @@
               },
               /* config.module.rule('scss').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -528,7 +528,7 @@
               },
               /* config.module.rule('scss').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -551,7 +551,7 @@
             use: [
               /* config.module.rule('scss').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -559,7 +559,7 @@
               },
               /* config.module.rule('scss').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -570,7 +570,7 @@
               },
               /* config.module.rule('scss').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -592,7 +592,7 @@
             use: [
               /* config.module.rule('scss').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -600,7 +600,7 @@
               },
               /* config.module.rule('scss').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -608,7 +608,7 @@
               },
               /* config.module.rule('scss').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -637,7 +637,7 @@
             use: [
               /* config.module.rule('sass').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -645,7 +645,7 @@
               },
               /* config.module.rule('sass').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -656,7 +656,7 @@
               },
               /* config.module.rule('sass').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -682,7 +682,7 @@
             use: [
               /* config.module.rule('sass').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -690,7 +690,7 @@
               },
               /* config.module.rule('sass').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -698,7 +698,7 @@
               },
               /* config.module.rule('sass').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -724,7 +724,7 @@
             use: [
               /* config.module.rule('sass').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -732,7 +732,7 @@
               },
               /* config.module.rule('sass').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -743,7 +743,7 @@
               },
               /* config.module.rule('sass').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -768,7 +768,7 @@
             use: [
               /* config.module.rule('sass').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -776,7 +776,7 @@
               },
               /* config.module.rule('sass').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -784,7 +784,7 @@
               },
               /* config.module.rule('sass').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -816,7 +816,7 @@
             use: [
               /* config.module.rule('less').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -824,7 +824,7 @@
               },
               /* config.module.rule('less').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -835,7 +835,7 @@
               },
               /* config.module.rule('less').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -858,7 +858,7 @@
             use: [
               /* config.module.rule('less').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -866,7 +866,7 @@
               },
               /* config.module.rule('less').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -874,7 +874,7 @@
               },
               /* config.module.rule('less').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -897,7 +897,7 @@
             use: [
               /* config.module.rule('less').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -905,7 +905,7 @@
               },
               /* config.module.rule('less').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -916,7 +916,7 @@
               },
               /* config.module.rule('less').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -938,7 +938,7 @@
             use: [
               /* config.module.rule('less').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -946,7 +946,7 @@
               },
               /* config.module.rule('less').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -954,7 +954,7 @@
               },
               /* config.module.rule('less').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -983,7 +983,7 @@
             use: [
               /* config.module.rule('stylus').oneOf('vue-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -991,7 +991,7 @@
               },
               /* config.module.rule('stylus').oneOf('vue-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1002,7 +1002,7 @@
               },
               /* config.module.rule('stylus').oneOf('vue-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1026,7 +1026,7 @@
             use: [
               /* config.module.rule('stylus').oneOf('vue').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -1034,7 +1034,7 @@
               },
               /* config.module.rule('stylus').oneOf('vue').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -1042,7 +1042,7 @@
               },
               /* config.module.rule('stylus').oneOf('vue').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1066,7 +1066,7 @@
             use: [
               /* config.module.rule('stylus').oneOf('normal-modules').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -1074,7 +1074,7 @@
               },
               /* config.module.rule('stylus').oneOf('normal-modules').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2,
@@ -1085,7 +1085,7 @@
               },
               /* config.module.rule('stylus').oneOf('normal-modules').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1108,7 +1108,7 @@
             use: [
               /* config.module.rule('stylus').oneOf('normal').use('vue-style-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/vue-style-loader/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\vue-style-loader\\index.js',
                 options: {
                   sourceMap: false,
                   shadowMode: false
@@ -1116,7 +1116,7 @@
               },
               /* config.module.rule('stylus').oneOf('normal').use('css-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/css-loader/dist/cjs.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\css-loader\\dist\\cjs.js',
                 options: {
                   sourceMap: false,
                   importLoaders: 2
@@ -1124,7 +1124,7 @@
               },
               /* config.module.rule('stylus').oneOf('normal').use('postcss-loader') */
               {
-                loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/postcss-loader/src/index.js',
+                loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\postcss-loader\\src\\index.js',
                 options: {
                   sourceMap: false,
                   plugins: [
@@ -1153,15 +1153,15 @@
         use: [
           /* config.module.rule('js').use('cache-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/cache-loader/dist/cjs.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\cache-loader\\dist\\cjs.js',
             options: {
-              cacheDirectory: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/.cache/babel-loader',
+              cacheDirectory: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\.cache\\babel-loader',
               cacheIdentifier: '4b4f2e2a'
             }
           },
           /* config.module.rule('js').use('babel-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/babel-loader/lib/index.js'
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\babel-loader\\lib\\index.js'
           }
         ]
       },
@@ -1171,12 +1171,12 @@
         test: /\.(vue|(j|t)sx?)$/,
         exclude: [
           /node_modules/,
-          '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/@vue/cli-service/lib'
+          'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\@vue\\cli-service\\lib'
         ],
         use: [
           /* config.module.rule('eslint').use('eslint-loader') */
           {
-            loader: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/eslint-loader/index.js',
+            loader: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\eslint-loader\\index.js',
             options: {
               extensions: [
                 '.js',
@@ -1187,7 +1187,7 @@
               cacheIdentifier: 'cdc95594',
               emitWarning: false,
               emitError: false,
-              eslintPath: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/node_modules/eslint',
+              eslintPath: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\node_modules\\eslint',
               formatter: undefined
             }
           }
@@ -1200,7 +1200,7 @@
       cacheGroups: {
         vendors: {
           name: 'chunk-vendors',
-          test: /[\\/]node_modules[\\/]/,
+          test: /[\\\/]node_modules[\\\/]/,
           priority: -10,
           chunks: 'initial'
         },
@@ -1285,7 +1285,7 @@
       {
         title: 'vue-loader-test',
         templateParameters: function () { /* omitted long function */ },
-        template: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/public/index.html'
+        template: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\public\\index.html'
       }
     ),
     /* config.plugin('preload') */
@@ -1310,8 +1310,8 @@
     new CopyPlugin(
       [
         {
-          from: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/public',
-          to: '/Users/wangdonghai/Documents/WDH_library/myProject/webpack-learn/vue-loader-test/dist',
+          from: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\public',
+          to: 'C:\\WDH_library\\personal_workspace\\vue-loader-dir\\vue-loader-test\\dist',
           toType: 'dir',
           ignore: [
             '.DS_Store',

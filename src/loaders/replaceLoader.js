@@ -1,6 +1,7 @@
 const { getOptions } = require('loader-utils')
-const parser = require('@babel/parser')
-var babel = require('@babel/core')
+// const parser = require('@babel/parser')
+const babel = require('@babel/core')
+// const compilerDom = require('@vue/compiler-dom')
 // import generate from '@babel/generator'
 // import traverse, { NodePath } from '@babel/traverse'
 module.exports = function(source) {
@@ -8,14 +9,13 @@ module.exports = function(source) {
     // console.log(getOptions(this))
     // console.log(this)
     // console.log(this.query.params)
-    let ast = ''
-    let result = babel.transform(source, {
+    const options = {
         ast: true,
-        filename: '',
-        code: true,
-        presets: [],
-        plugins: []
-    })
+        code: false,
+        plugins: ['@babel/plugin-transform-modules-commonjs'],
+        preset: []
+    }
+    let result = babel.transformSync(source, options)
     console.log('result ===>', result)
     this.callback(null, source)
 }
